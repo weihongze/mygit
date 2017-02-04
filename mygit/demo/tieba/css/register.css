@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  font-family: '微软雅黑';
+  text-decoration: none;
+}
+.clearfloat:after{
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.content{
+  width: 1000px;
+  margin: 0 auto;
+}
+header,nav,section,#banner{
+  width: 100%;
+}
+/*header*/
+#header{
+  height: 75px;
+  /*box-shadow: 0px 0px 15px #ddd;*/
+  line-height: 100px;
+}
+#header .register_l .register_img{
+  display: inline-block;
+  margin-right: 10px;
+}
+#header .register_l .register_img img{
+  vertical-align: top;
+  margin-top: 15px;
+}
+#header .register_l .register_accounts{
+  font-size: 18px;
+  border-left: 1px solid #ddd;
+  color: #888;
+  font-weight: bold;
+  padding: 3px 10px;
+}
+#header .register_r{
+  font-size: 13px;
+  line-height: 90px;
+  color: #666;
+}
+#header .register_r #register_r_but{
+  width: 60px;
+  height: 30px;
+  color: #444;
+  border-radius: 3px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  outline: none;
+  cursor: pointer;
+}
+.reg_hr{
+  height: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  background: url('../img/reg_hr.png') no-repeat ;
+}
+/*section*/
+#section{
+  margin-top: 20px;
+}
+#section .con_inp{
+  width: 700px;
+  float: left;
+  clear: both;
+  position: relative;
+}
+#section .con_phone{
+  width: 300px;
+  float: left;
+  height: 20px;
+}
+#section .con_inp p{
+  width: 600px;
+  height: 42px;
+  line-height: 42px;
+  margin-top: 20px;
+}
+#section .con_inp p label{
+  color: #666;
+  font-size: 15px;
+  width: 80px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+#section .con_inp .p_txt input{
+  height: 40px;
+  width: 315px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 25px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+#section .con_inp .p_txt input:focus{
+  border:1px solid #3f89ec;
+}
+#section #baidu_txt {
+  width: 13px;
+  height: 13px;
+}
+#section #con_login{
+  border: 1px solid #3f89ec;
+  background: #3f89ec;
+  width: 350px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+#section .con_inp label.baidu_txt{
+  font-size: 12px;
+  width: auto;
+  padding: 0;
+}
+#section .con_inp .p_m{
+  margin-left: 90px;
+}
+#section .con_inp .p_m a{
+  color:#3b99fc;
+}
+#section .con_inp .p_m a:hover{
+  text-decoration: underline;
+}
+#section .con_inp #user_txt{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  color: #666;
+  width: 200px;
+  visibility: hidden;
+}
+#section .con_inp #phone_txt{
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  color: #666;
+  visibility: hidden;
+  width: 240px;
+}
+#section .con_inp #password_txt{
+  position: absolute;
+  right: 25px;
+  top: 206px;
+  width: 220px;
+  height: 60px;
+  border: 1px solid #ddd;
+  padding: 4px 0px;
+  background: #f9f9f9;
+  visibility: hidden;
+}
+#section .con_inp #password_txt span{
+  display: block;
+  width: 200px;
+  height: 20px;
+  color: #666;
+  line-height: 20px;
+  padding-left: 20px;
+  background: url('../img/reg_icons.png') no-repeat -83px -113px;
+}
+#section .con_inp #user_true{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  display: none;
+  right: 230px;
+  background: url('../img/reg_icons.png') no-repeat -78px 3px;
+}
+#section .con_inp #phone_true{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 93px;
+  display: none;
+  right: 230px;
+  background: url('../img/reg_icons.png') no-repeat -78px 3px;
+}
+#section .con_phone{
+  margin-top: 20px;
+  width: 240px;
+  height: 190px;
+  border: 1px solid #d1eeff;
+  padding: 10px;
+  background-color: #f5fbff;
+}
+#section .con_phone p{
+  margin-bottom: 5px;
+}
+#section .con_phone_top{
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #e6edf2;
+  font-size: 18px;
+
+  padding-left: 30px;
+  background: url('../img/phone.png') no-repeat 5px 5px;
+}
+#section .phone_numb{
+  margin: 25px 0;
+}
+.con_phone_colorA{
+  color: #666;
+  font-size: 13px;
+}
+.con_phone_colorB{
+  color: #f18300;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+/*..........*/

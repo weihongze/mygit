@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>贴吧</title>
+    <link rel="stylesheet" href="css/tieba.css" charset="utf-8">
+    <script type="text/javascript" src='js/jquery.js'></script>
+    <script type="text/javascript" src='js/tieba.js'></script>
+  </head>
+  <body>
+    <header id="header" class="clearfloat">
+        <ul>
+          <li><a href="#">问题反馈</a></li>
+          <li><a class='login_but' href="#">登录</a></li>
+          <li><a href="register.html" target="_blank">注册</a></li>
+          <li class="li_shop"></li>
+          <li class="li_phone"></li>
+          <li class="li_i">|</li>
+          <li class="li_app"><a href="#">应用中心</a></li>
+          <li class="li_vip"><a href="#">会员官网</a></li>
+          <li><a href="#">百度首页</a></li>
+        </ul>
+    </header>
+    <nav id="nav" class="clearfloat">
+      <div class="nav_wrap" >
+        <div class="search_logo">
+          <img src="img/search_logo.gif" alt="百度" />
+        </div>
+        <div class="nav_menu">
+          <form class="" action="index.html" method="post">
+            <div class="nav_top">
+              <span><a href="#">新闻</a></span>
+              <span><a href="#">网页</a></span>
+              <span class="s_black"><a href="#">贴吧</a></span>
+              <span><a href="#">知道</a></span>
+              <span><a href="#">音乐</a></span>
+              <span><a href="#">图片</a></span>
+              <span><a href="#">视频</a></span>
+              <span><a href="#">地图</a></span>
+              <span><a href="#">百科</a></span>
+              <span><a href="#">文库</a></span>
+            </div>
+            <div class="nav_bottom">
+              <input type="text" name="name" value="">
+              <span class="btn_to"><a href="#">进入贴吧</a></span>
+              <span class="btn_all"><a href="#">全吧搜索</a></span>
+              <span class="btn_advanced"><a href="#">高级搜索</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+    <div id="banner" class="clearfloat">
+      <div class="banner_img">
+        <!-- 图片层 -->
+        <div class="banner_left">
+          <ul>
+            <li><a href="#"><img src="img/a1.jpg"/></a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><img src="img/b1.jpg"/></a></li>
+            <li><a href="#"><img src="img/b2.png"/></a></li>
+            <li><a href="#"><img src="img/b3.jpg"/></a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><img src="img/c1.jpg"/></a></li>
+            <li><a href="#"><img src="img/c2.jpg"/></a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><img src="img/d1.jpg"/></a></li>
+            <li><a href="#"><img src="img/d2.jpg"/></a></li>
+            <li><a href="#"><img src="img/d3.jpg"/></a></li>
+          </ul>
+        </div>
+        <!-- 图片层结束 -->
+        <div class="banner_right">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <div class="banner_login">
+            <a class="login_but" href="#"></a>
+          </div>
+          <div id="popup">
+            <div class="popup_window">
+              <div class="popup_head">
+                <span class="popup_head_sp">登录百度贴吧</span>
+                <a href="#"></a>
+              </div>
+              <div class="popup_con">
+                <div class="popup_conl">
+                  <p class="popup_scanning">手机扫描，安全登录</p>
+                  <img src="img/popup/qrcode.png"/>
+                  <div class="popup_app">
+                    <p>请使用<a class="popup_app_a" href="#">手机百度app</a>扫描登录</p>
+                  </div>
+                </div>
+                <div class="popup_conr clearfloat">
+                  <form class="" action="index.html" method="get">
+                    <ul>
+                      <li class="clearfloat"><a href="#">短信快捷登录</a></li>
+                      <li>
+                        <input type="text" name="username"  placeholder="手机/邮箱/用户名" id="popup_txt">
+                      </li>
+                      <li>
+                        <input type="password" name="password"  placeholder="密码" id="popup_password">
+                      </li>
+                      <li>
+                        <p class="auto_login"><input type="checkbox"  checked="checked" id='auto_login'><label for="auto_login">下次自动登录</label></p>
+                        <a class="popup_app_a" href="#">登录遇到问题</a>
+                      </li>
+                      <li><button type="submit">登录</button></li>
+                      <li><a class="popup_app_a" href="register.html" target="_blank">立即注册</a></li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner_bottom">
+        <u class="click_left"></u>
+        <span class="active" ></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <u class="click_right"></u>
+      </div>
+    </div>
+    <section id="section" class="clearfloat">
+      <div id="sec_menu" class="clearfloat">
+        <div class="sec_left">
+          <div class="sec_head">
+            <span>贴吧分类</span>
+            <u></u>
+          </div>
+          <div class="sec_ul clearfloat">
+            <ul class='clearfloat first_ul'>
+              <li><i></i><a href="#">娱乐明星</a></li>
+              <li><a href="#">港台东南亚明星</a></li>
+              <li><a href="#">内地明星</a></li>
+              <li><a href="#">韩国明星</a></li>
+              <li><a href="#">日本明星</a></li>
+              <li><a href="#">时尚人物</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">爱综艺</a></li>
+              <li><a href="#">内地综艺</a></li>
+              <li><a href="#">台湾综艺</a></li>
+              <li><a href="#">韩国综艺</a></li>
+              <li><a href="#">时尚·生活服务</a></li>
+              <li><a href="#">体育运动·健身</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">追剧狂</a></li>
+              <li><a href="#">韩国电视剧</a></li>
+              <li><a href="#">香港电视剧</a></li>
+              <li><a href="#">美剧</a></li>
+              <li><a href="#">日本电视剧</a></li>
+              <li><a href="#">内地电视剧</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">看电影</a></li>
+              <li><a href="#">香港电影</a></li>
+              <li><a href="#">欧美电影</a></li>
+              <li><a href="#">内地电影</a></li>
+              <li><a href="#">韩国电影</a></li>
+              <li><a href="#">日本电影</a></li>
+              <li><a href="#">台湾电影</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">体育</a></li>
+              <li><a href="#">足球</a></li>
+              <li><a href="#">篮球</a></li>
+              <li><a href="#">NBA</a></li>
+              <li><a href="#">CBA</a></li>
+              <li><a href="#">乒乓球</a></li>
+              <li><a href="#">网球</a></li>
+              <li><a href="#">舞蹈</a></li>
+              <li><a href="#">健身</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">小说</a></li>
+              <li><a href="#">奇幻</a></li>
+              <li><a href="#">言情</a></li>
+              <li><a href="#">灵异</a></li>
+              <li><a href="#">穿越</a></li>
+              <li><a href="#">连载</a></li>
+              <li><a href="#">修真</a></li>
+              <li><a href="#">历史</a></li>
+              <li><a href="#">架空文</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat fixed_ul'>
+              <li><i></i><a href="#">生活家</a></li>
+              <li><a href="#">小而美</a></li>
+              <li><a href="#">DIY</a></li>
+              <li><a href="#">美食</a></li>
+              <li><a href="#">摄影</a></li>
+              <li><a href="#">旅行</a></li>
+              <li><a href="#">变美</a></li>
+              <li><a href="#">留学移民</a></li>
+              <li><a href="#">文玩</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">闲·趣</a></li>
+              <li><a href="#">萌宠</a></li>
+              <li><a href="#">萝莉</a></li>
+              <li><a href="#">重口味</a></li>
+              <li><a href="#">吐槽</a></li>
+              <li><a href="#">恐怖</a></li>
+              <li><a href="#">星座</a></li>
+              <li><a href="#">爆料</a></li>
+              <li><a href="#">喵星人</a></li>
+              <b></b>
+            </ul>
+            <ul class='clearfloat'>
+              <li><i></i><a href="#">游戏</a></li>
+              <li><a href="#">客户端网游</a></li>
+              <li><a href="#">桌游</a></li>
+              <li><a href="#">游戏角色</a></li>
+              <li><a href="#">网页版网游</a></li>
+              <li><a href="#">手机游戏</a></li>
+              <li><a href="#">小游戏</a></li>
+              <b></b>
+            </ul>
+            <div class="box">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 主体右侧 -->
+        <div class="sec_right">
+           <div id="sec_r_top">
+             <h1>朵朵奇吧</h1>
+             <div class="duoduo_l">
+               <div class="duoduo_img">
+                 <img src="img/duoduoa.jpg"/>
+               </div>
+               <div class="duoduo_l_txt">
+                 <a href="#">朱元宝个人吧</a>
+                 <p>女神归来，带你一起猜奥运奖牌</p>
+                 <span>5156</span>
+                 <span>15777</span>
+               </div>
+             </div>
+             <div class="duoduo_r">
+               <div class="duoduo_img">
+                 <img src="img/duoduob.png"/>
+               </div>
+               <div class="duoduo_r_txt">
+                 <a href="#">樱花日语吧</a>
+                 <p>S.I.N.G女团：《柒月》中国风，音乐梦，不散场！</p>
+                 <span>248142</span>
+                 <span>80202</span>
+               </div>
+             </div>
+             <h2>嗅，花的芬芳！</h2>
+             <div class="sec_r_bottom">
+               <dl>
+                 <dt><img src="img/flower_1.jpg" /></dt>
+                 <dd>
+                   <a href="#">月季花吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_2.jpg" /></dt>
+                 <dd>
+                   <a href="#">兰花吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_3.jpg" /></dt>
+                 <dd>
+                   <a href="#">牡丹吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_4.jpg" /></dt>
+                 <dd>
+                   <a href="#">牡丹吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_5.jpg" /></dt>
+                 <dd>
+                   <a href="#">养花吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_6.jpg" /></dt>
+                 <dd>
+                   <a href="#">君子兰吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_7.jpg" /></dt>
+                 <dd>
+                   <a href="#">茉莉花吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_8.jpg" /></dt>
+                 <dd>
+                   <a href="#">薰衣草吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt><img src="img/flower_9.jpg" /></dt>
+                 <dd>
+                   <a href="#">纸飞机吧</a>
+                   <span>2798</span>
+                 </dd>
+               </dl>
+             </div>
+           </div>
+           <div class="sec_r_bottom_b">
+             <div class="sec_bottom_l">
+               <div class="gameBar">
+                 <div class="game_live" >
+                   <p><a href="#">游戏直播</a></p>
+                   <dl class="game_dl">
+                     <dt><img src="img/game_live.jpg" alt="" /></dt>
+                     <dd><a href="#">LPL夏季赛</a></dd>
+                     <dd><a href="#">英雄联盟</a></dd>
+                     <dd><a href="#">Dota2</a></dd>
+                     <dd><a href="#">炉石传说</a></dd>
+                     <dd><a href="#">单机游戏</a></dd>
+                   </dl>
+                 </div>
+                 <div class="game_center">
+                   <p><a href="#">娱乐中心</a></p>
+                   <dl class="game_dl">
+                     <dt class="game_slide">
+                       <a href="#"><img src="img/ent_slid1.jpg" /></a>
+                       <a href="#"><img src="img/ent_slid2.jpg" /></a>
+                       <a href="#"><img src="img/ent_slid3.jpg" /></a>
+                       <a href="#"><img src="img/ent_slid4.jpg" /></a>
+                       <a href="#"><img src="img/ent_slid5.png" /></a>
+                     </dt>
+                     <dd class="game_dd">
+                       <span style="background:#fff"></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                     </dd>
+                     <dd><a href="#">食神争霸</a></dd>
+                     <dd><a href="#">斗地主</a></dd>
+                     <dd><a href="#">德州扑克</a></dd>
+                     <dd><a href="#">三国杀</a></dd>
+                     <dd><a href="#">贴吧夺宝</a></dd>
+                   </dl>
+                 </div>
+               </div>
+               <div class="hots">
+                 <p class="hot_state"><a href='#'>热门动态</a></p>
+                 <div class="cool_pet">
+                   <div class="t_name"><a href="#">萌宠</a><a href="#">兔子吧</a></div>
+                   <div class="t_tag"><a href="#">【记录】暑假在宠物店打工的日常</a></div>
+                   <div class="t_txt">蠢兔！p1和仙女图的合照 p2我女儿小时候 p3超喜欢的流氓 p4仙女兔 (每只兔子我都很喜欢只是挑了几张拍的</div>
+                   <ul class="t_ul clearfloat">
+                     <li><img src="img/rabbits1.jpg"  /></li>
+                     <li><img src="img/rabbits2.jpg"  /></li>
+                     <li><img src="img/rabbits3.jpg"  /></li>
+                   </ul>
+                   <div class="t_reply"></div>
+                   <div class="t_login">
+                     <a href="#">大飞燕9</a>
+                     <span>今天18:11</span>
+                   </div>
+                 </div>
+                 <div class="cool_pet">
+                   <div class="t_name"><a href="#">复古</a><a href="#">汉服吧</a></div>
+                   <div class="t_tag"><a href="#">【日常】关于在凤凰穿汉服的经历</a></div>
+                   <div class="t_txt">衣服是在楼上上火车前一小时才到卤煮手里的。挨过了漫长的12个小时才到达卤煮订的客栈。 当天晚上卤</div>
+                   <ul class="t_ul clearfloat">
+                     <li><img src="img/hanfu1.jpg"  /></li>
+                     <li><img src="img/hanfu2.jpg"  /></li>
+                     <li><img src="img/hanfu3.jpg"  /></li>
+                   </ul>
+                   <div class="t_reply"></div>
+                   <div class="t_login">
+                     <a href="#">莫时鸢</a>
+                     <span>今天 12:39</span>
+                   </div>
+                 </div>
+                 <div class="cool_pet">
+                   <div class="t_name"><a href="#">旅行</a><a href="#">旅行吧</a></div>
+                   <div class="t_tag"><a href="#">【旅行】走上一生只为拥抱你</a></div>
+                   <div class="t_txt">我们经历过很多， 可终究还是分开。 但还是要谢谢你， 谢谢你喜欢过我， 也谢谢你不爱我。 让我明白，</div>
+                   <ul class="t_ul clearfloat">
+                     <li><img src="img/lvxing1.jpg"  /></li>
+                     <li><img src="img/lvxing2.jpg"  /></li>
+                     <li><img src="img/lvxing3.jpg"  /></li>
+                   </ul>
+                   <div class="t_reply"></div>
+                   <div class="t_login">
+                     <a href="#">米遥12138</a>
+                     <span>今天 15:00</span>
+                   </div>
+                 </div>
+                 <div class="cool_pet">
+                   <div class="t_name"><a href="#">日本动漫</a><a href="#">火影忍者吧</a></div>
+                   <div class="t_tag"><a href="#">【动漫】火影忍者各类盘点《通灵兽》《角色》</a></div>
+                   <div class="t_txt">通灵兽，角色，忍术，体术，登等等</div>
+                   <ul class="t_ul clearfloat">
+                     <li><img src="img/huoying1.jpg"  /></li>
+                     <li><img src="img/huoying2.jpg"  /></li>
+                     <li><img src="img/huoying3.jpg"  /></li>
+                   </ul>
+                   <div class="t_reply"></div>
+                   <div class="t_login">
+                     <a href="#">zhangjinding3</a>
+                     <span>今天 15:27</span>
+                   </div>
+                 </div>
+                 <div class="cool_pet">
+                   <div class="t_name"><a href="#">人文</a><a href="#">文学吧</a></div>
+                   <div class="t_tag"><a href="#">【散文】三世回眸两相望，几成追忆佛前鼓</a></div>
+                   <div class="t_txt">凝心过往，熬煮岁月，若一个人懂我该多好。 此帖写一写散文随笔与诸君共享，把酒青梅。</div>
+                   <ul class="t_ul clearfloat">
+                     <li><img src="img/wenxue1.jpg"  /></li>
+                     <li><img src="img/wenxue2.jpg"  /></li>
+                     <li><img src="img/wenxue3.jpg"  /></li>
+                   </ul>
+                   <div class="t_reply"></div>
+                   <div class="t_login">
+                     <a href="#">繁星云汐</a>
+                     <span>44分钟之前</span>
+                   </div>
+                 </div>
+                 <div class="cool_pet">
+                   <div class="t_name"><a href="#">萝莉</a><a href="#">初音ミク吧</a></div>
+                   <div class="t_tag"><a href="#">【直播】捏一只sweet devil(? ??_??)?</a></div>
+                   <div class="t_txt">这次过程应该会比较多，开贴督促自己</div>
+                   <ul class="t_ul clearfloat">
+                     <li><img src="img/chuyin1.jpg"  /></li>
+                     <li><img src="img/chuyin2.jpg"  /></li>
+                     <li><img src="img/chuyin3.jpg"  /></li>
+                   </ul>
+                   <div class="t_reply"></div>
+                   <div class="t_login">
+                     <a href="#">米遥12138</a>
+                     <span>今天 15:00</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="sec_bottom_r">
+               <div class="hot_list">
+                 <div class="list_tag clearfloat">
+                   <h1>贴吧热议榜</h1>
+                   <a href="#">查看榜单</a>
+                 </div>
+                 <ul>
+                   <li>
+                     <span class="list_color">1</span>
+                     <a href="#">老九门大结局</a>
+                     <span>903102</span>
+                   </li>
+                   <li>
+                     <span class="list_color">2</span>
+                     <a href="#">青云志收视扑街</a>
+                     <span>832132</span>
+                   </li>
+                   <li>
+                     <span class="list_color">3</span>
+                     <a href="#">釜山行</a>
+                     <span>763123</span>
+                   </li>
+                   <li>
+                     <span>4</span>
+                     <a href="#">步步惊心丽第六集</a>
+                     <span>531232</span>
+                   </li>
+                   <li>
+                     <span>5</span>
+                     <a href="#">雷电法王杨永信</a>
+                     <span>291887</span>
+                   </li>
+                   <li>
+                     <span>6</span>
+                     <a href="#">瓦林卡明年全满贯有戏</a>
+                     <span>131238</span>
+                   </li>
+                   <li>
+                     <span>7</span>
+                     <a href="#">剑网3中秋盒子讨论</a>
+                     <span>80932</span>
+                   </li>
+                   <li>
+                     <span>8</span>
+                     <a href="#">九色鹿有个卵用</a>
+                     <span>76521</span>
+                   </li>
+                   <li>
+                     <span>9</span>
+                     <a href="#">支付宝提现收费</a>
+                     <span>31667</span>
+                   </li>
+                   <li>
+                     <span>10</span>
+                     <a href="#">剑网3七夕盒子讨论</a>
+                     <span>21312</span>
+                   </li>
+                 </ul>
+               </div>
+               <div class="entertainment">
+                 <div class="list_tag clearfloat">
+                   <h1>贴吧娱乐</h1>
+                   <a href="#">合作沟通</a>
+                 </div>
+                 <img src="img/qiyi.png"  />
+                 <ul class="qiyi_ul">
+                   <li><a href="#">福利！【腾讯视频嗨剧社校园行】</a></li>
+                   <li><a href="#">《十五年等待候鸟》的主演们做客贴吧访谈直播啦</a></li>
+                   <li><a href="#">《最强大脑》Dr.魏遭郭敬明呛声</a></li>
+                 </ul>
+               </div>
+             </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </section>
+    <div class="bottom_wrap"></div>
+    <footer id="footer">
+      <div class="foot">
+        <span>©2016 Baidu</span>
+        <a href="#">使用百度前必读</a>
+        <a href="#">贴吧协议</a>
+        <a href="#">投诉反馈</a>
+        <span>信息网络传播视听节目许可证 0110516</span>
+        <a href="#"><img src="img/net_0d27e51.png" /></a>
+        <a href="#"><img src="img/110_3adf20a.png" /></a>
+      </div>
+    </footer>
+    <div class="position_body">
+      <div id="share">
+        <span>分<br/>享</span>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css" charset="utf-8">
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="content clearfloat">
+        <div class="register_l left">
+          <a class="register_img" href="#"><img src="img/search_logo.gif" /></a>
+          <a class="register_accounts" href="#">注册百度帐号</a>
+        </div>
+        <div class="register_r right">
+          我已注册，现在就
+          <button id="register_r_but" type="submit" name="button">登录</button>
+        </div>
+      </div>
+    </header>
+    <div class="reg_hr"></div>
+    <section id="section">
+      <div class="content clearfloat">
+        <div class="con_inp">
+          <form class="" action="index.html" method="get">
+            <p class="p_txt"><label for="username">用户名</label><input onkeyup="user(this.value)" onfocus="focus_user()" onblur="blur_user(this.value)" id="username" name="用户名" type="text" placeholder="请设置用户名"></p>
+            <p class="p_txt"><label for="numb">手机号</label><input onkeyup="phone(this.value)" onfocus="focus_num()" onblur="blur_num(this.value)" id="numb" name="手机号" type="text" placeholder="请输入手机号"></p>
+            <p class="p_txt"><label for="phone_code">验证码</label><input id="phone_code" name="验证码" type="text" placeholder="请输入验证码"></p>
+            <p class="p_txt"><label for="password">密码</label><input onkeyup="password_t(this.value)" onfocus="focus_word()" onblur="blur_word(this.value)" id="password" name="密码" type="password" placeholder="请输入密码"></p>
+            <p class="p_m"><input id="baidu_txt" type="checkbox" checked="checked"><span><label class="baidu_txt" for="baidu_txt">阅读并接受</label><a href="#">《百度用户协议》</a></span></p>
+            <p class="p_m"><input id="con_login" type="submit" placeholder="请设置用户名"></p>
+            <div id="user_txt" >设置后不可更改中英文均可，<br>最长14个英文或7个汉字</div>
+            <div id="phone_txt">请输入中国大陆手机号，其他用户不可见</div>
+            <div id="password_txt">
+              <span id="password1">长度为6-14个字符</span>
+              <span id="password2">支持数字,大小写字母和标点符号</span>
+              <span id="password3">不允许有空格</span>
+            </div>
+            <span id="user_true"></span>
+            <span id="phone_true"></span>
+          </form>
+        </div>
+        <div class="con_phone">
+          <div class="con_phone_top">
+            手机快速注册
+          </div>
+          <div class="phone_numb">
+            <p class="con_phone_colorA">请使用中国大陆手机号，编辑短信：</p>
+            <p class="con_phone_colorB">6-14位字符（支持数字/字母/符号）</p>
+          </div>
+          <div class="phone_password">
+            <p class="con_phone_colorA">作为登录密码，发送至：</p>
+            <p class="con_phone_colorB">1069 80000 36590</p>
+            <p class="con_phone_colorA">即可注册成功，手机号即为登录帐号。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/register.js"></script>
+
+  </body>
+</html>
